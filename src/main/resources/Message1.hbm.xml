@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping  >
+
+    <class name="hello.Message"  table="RS_SOFT_BATCH">
+        <id name="msg_id" column="AV_MSG_ID" >
+           <generator class="native"/>
+        </id>
+      <property name="mymessage" column="AV_MESSAGE_TEXT"  /> 
+      <property name="details" column="AVENTIOR_DETAILS" /> 
+      <property name="concat_msg"   column="CONCAT_MSG" access="field"/>
+   </class>
+
+</hibernate-mapping>
