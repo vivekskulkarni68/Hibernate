@@ -11,7 +11,7 @@ public class Message {
     }
     private static final Message msg = new Message();
      Message(){
-    	 details="hi there";
+    	 details="hi there !!!";
      }
      public void setMessage(String str){
     	System.out.println("DEBUG : setMessage is called");
