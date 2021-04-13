@@ -7,6 +7,7 @@ public static void main(String[] args){
 	Message msg = new Message();
 	Message msg2 = new Message();
 	//Message msg = Message.getInstance();
+	msg.setMessage("Namaste World");
 	msg.setMessage("Hello World");
 	Session session = HibernateUtil.getSessionFactory().openSession();
 	Transaction tx = session.getTransaction();
